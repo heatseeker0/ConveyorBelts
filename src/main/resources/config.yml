@@ -1,0 +1,8 @@
+# Enable or disable debugging
+debug: false
+
+# Messages sent to players. You can use &0..&f color codes.
+# All messages starting with error-* have the prefix automatically added in front.
+# When rewriting messages that contain text like %d and %s make sure you keep it.
+messages:
+  chat-disabled: '&4Chat is disabled.'

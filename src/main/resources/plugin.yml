@@ -1,0 +1,20 @@
+name: ${project.name}
+version: ${project.version}
+description: ConveyorBelts
+authors: [Catalin Ionescu]
+main: ${project.groupId}.${project.artifactId}.ConveyorBelts
+api-version: 1.13
+commands:
+  conveyorbelts:
+    description: Admin command to configure various ConveyorBelts settings
+    usage: /<command> [reload]
+    permission: conveyorbelts.admin
+permissions:
+  conveyorbelts.*:
+    description: All ConveyorBelts permissions
+    default: op
+    children:
+    - conveyorbelts.admin
+  conveyorbelts.admin:
+    description: Allows access to various ConveyorBelts settings
+    default: op
